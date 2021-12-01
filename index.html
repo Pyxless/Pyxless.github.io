@@ -6,27 +6,6 @@
 <link rel="stylesheet" href="css/главная.css">
 </head>
 <body>
- <!-- <button class="pop">Cделать заказ👑</button>
-
-<div class="popup">
-  <div class="container">
-    <div class="popup__wrapper">
-      <div id="blablabla">
-        <form role="form" action="/requestFine" autocomplete="off" method="POST">
-          <label>Ім'я:</label>
-          <input type="text" name="nameReq">
-          <label>Прізвище:</label>
-          <input type="text" name="lastNameReq">
-          <label>Телефон:</label>
-          <input type="text" name="telReq">
-          <label>Опис:</label>
-          <input type="text" name="textReq">
-          <button type="submit" class="btn btn-success">Отправить</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div> -->
 
 
 <div class="button">
@@ -76,6 +55,30 @@ openPopUp.addEventListener('click', function(e){
 
 closePopUp.addEventListener('click', () => {
     popUp.classList.remove('active');
+})
+$(function(){
+  $('form').submit(function() {
+  var form = $(this);
+    $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: form.serialize(),
+        beforeSend: (function(){
+          $('.submit').css('color', 'transparent');
+          $('.submit').addClass('progress-bar progress-bar-striped progress-bar-animated bg-warning');
+        }),error: function(XMLHttpRequest, textStatus, errorThrown) {
+              $('.error-data').slideDown();
+            },success: (function() {
+                $('.submit').css('color', '#333');
+                $('.submit').removeClass('progress-bar progress-bar-striped progress-bar-animated bg-warning');
+                $('.alrt').fadeIn();
+        setTimeout(function() {
+            form.trigger("reset");
+        }, 2000);
+    })
+})
+    return false;
+})
 })
   </script>
 </body>
