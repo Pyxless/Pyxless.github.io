@@ -80,15 +80,14 @@ $(function(){
     return false;
 })
 })
+const { SourceMapDevToolPlugin } = require("webpack");
+
+plugins: [
+  new SourceMapDevToolPlugin({
+    filename: "[file].map"
+  }),
+
+]
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
