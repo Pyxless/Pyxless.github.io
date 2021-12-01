@@ -1,0 +1,377 @@
+body
+{
+    background: #FFFFFF url(Главная.jpeg); 
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-attachment: fixed;
+    }
+    IMG.fig {
+    border: 3px solid #000000;
+    filter: alpha(Opacity=70);
+    opacity: 0.7; 
+    position: absolute;
+      top: 1%;
+      left: 8%;
+    
+    }
+    a.man{
+      
+    font-size:35px;
+    color:#ffffff;
+    position: absolute;
+      top: 4%;
+      left: 22%;
+    
+    
+    }
+    a.man:visited {
+        color: #ffffff; /* Цвет посещённой ссылки */
+       } 
+       a.man:hover {
+        color: #000000; /* Цвет ссылки при наведении на нее курсора мыши */  
+        text-decoration: underline; /* Добавляем подчеркивание */
+       }
+    a.girl{
+      
+    font-size:35px;
+    color:#000000;
+    position: absolute;
+      top: 4%;
+      left: 35%;
+    
+    }
+    a.girl:visited {
+        color: #ffffff; /* Цвет посещённой ссылки */
+       } 
+      a.girl:hover {
+        color: #000000; /* Цвет ссылки при наведении на нее курсора мыши */  
+        text-decoration: underline; /* Добавляем подчеркивание */
+       }
+       a.us{
+      
+    font-size:35px;
+    color:#000000;
+    position: absolute;
+      top: 4%;
+      right: 40%;
+    
+    }
+    a.us:visited {
+        color: #000000; /* Цвет посещённой ссылки */
+       } 
+       a.us:hover {
+        color: #FFFFFF; /* Цвет ссылки при наведении на нее курсора мыши */  
+        text-decoration: underline; /* Добавляем подчеркивание */
+       }
+       a.adress{
+      
+    font-size:35px;
+    color:#000000;
+    position: absolute;
+      top: 4%;
+      right: 27%;
+    
+    
+    }
+    a.adress:visited {
+        color: #000000; /* Цвет посещённой ссылки */
+       } 
+       a.adress:hover {
+        color: #FFFFFF; /* Цвет ссылки при наведении на нее курсора мыши */  
+        text-decoration: underline; /* Добавляем подчеркивание */
+       }
+    
+       a.tt {
+        background: url(tt.png); /* Путь к файлу с исходным рисунком  */
+        display: block; /*  Рисунок как блочный элемент */
+        width: 48px; /* Ширина рисунка */
+        height: 48px; /*  Высота рисунка */
+     position: absolute;
+      top: 4%;
+      right: 12%;
+        }
+       a.tt:hover {
+        background: url(tt1.png); /* Путь к файлу с заменяемым рисунком  */
+       }
+        a.vk {
+        background: url(vk.png); /* Путь к файлу с исходным рисунком  */
+        display: block; /*  Рисунок как блочный элемент */
+        width: 48px; /* Ширина рисунка */
+        height: 48px; /*  Высота рисунка */
+      position: absolute;
+      top: 4%;
+      right: 17%;
+        }
+       a.vk:hover {
+        background: url(vk1.png); /* Путь к файлу с заменяемым рисунком  */
+       }
+        a.inst {
+        background: url(inst.png); /* Путь к файлу с исходным рисунком  */
+        display: block; /*  Рисунок как блочный элемент */
+        width: 48px; /* Ширина рисунка */
+        height: 48px; /*  Высота рисунка */
+       position: absolute;
+       top: 4%;
+      right: 22%;
+        }
+       a.inst:hover {
+        background: url(inst1.png); /* Путь к файлу с заменяемым рисунком  */
+       }
+       p{
+        font-size: 32px;
+       }
+.button  {
+margin-top: 40px;
+text-align: center;
+}
+       .button a {
+        background-color:Transparent ;
+         border: 2px solid #A9A9A9 ;
+         color: white;
+         font-size: 32px;
+         padding: 15px 50px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         border-radius: 12px;
+         font-size: 16px;
+         position: absolute;
+         top: 50%;
+         right: 45%;
+     }
+       .button a{
+       -webkit-transition-duration: 0.4s; 
+       transition-duration: 0.4s;
+       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   }
+   
+   .button a:hover {
+       background-color: #ffffff; 
+       color: black;
+       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+   }
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.pop_up {
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    z-index: 2;
+    transform: translateY(-44.5%) scale(0);
+    transition: .4s ease-in-out;
+}
+
+.pop_up.active {
+   transform: translateY(0%) scale(100%);
+   background-color: rgba(0, 0, 0, .8);
+}
+
+.pop_up_container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+  
+}
+
+.pop_up_body {
+    margin: auto;
+    width: 600px;
+    background-color: #A9A9A9;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 15px 110px 15px;
+    position: relative;
+}
+
+.pop_up_body p {
+    font-size: 28px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #22262D;
+    margin-bottom: 40px;
+}
+
+.pop_up_body input {
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 330px;
+    padding: 17px 20px;
+    background-color: #E5E5E5;
+    border-radius: 10px;
+    border: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+}
+
+.pop_up_body input:focus {
+    outline: none;
+}
+
+.pop_up_body button {
+    cursor: pointer;
+    display: block;
+    width: 330px;
+    margin: 60px auto 0px auto;
+    padding: 20px 0px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    background-color:white;
+}
+.pop_up_body button {
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.pop_up_body button:hover {
+  background-color: black; 
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.pop_up_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 21px;
+    cursor: pointer;
+}
+   
+   
+
+      
+    a.text{
+      font-size:30px;
+    color:#000000;
+     font-weight: bold;
+     position: absolute;
+       top: 95%;
+      right: 30%;
+    }
+    a.text1{
+      font-size:30px;
+    color:#000000;
+    font-weight: bold;
+    position: absolute;
+       top: 40%;
+      right: 30%;
+    }
+    a.text2{
+      font-size:30px;
+    color:#000000;
+    font-weight: bold;
+    position: absolute;
+       top: 45%;
+      right: 41%;
+    }
+    
+    .dropbtn {
+        background-color: Transparent;
+        border: 3px solid #000000;
+        color: black;
+        padding: 20px;
+        font-size: 22px;
+         border-radius: 12px;
+     }
+    .dropdown {
+    display: inline-block;
+        position: absolute;
+      border-radius: 12px;
+      top: 53%;
+      left: 41%;
+    
+    }
+    .dropdown:hover .dropbtn {background: #A9A9A9}
+    
+    a{
+      color: #fff;
+     }
+    a:hover{
+     text-decoration: none;
+    }
+    .container{
+     width:450px;
+     background-color: rgba(24, 33, 52, 0.7);
+     margin: 100px auto 0 auto;
+     text-align: center;
+     box-shadow: 0 -5px 0 #3adbfd;
+     padding-bottom: 20px;
+    }
+    .container img{
+     width:120px;
+     height:120px;
+     margin: -60px 0 30px 0;
+     border: 5px solid #1a394f;
+     border-radius: 50%;
+     box-shadow: 0 -5px 0 #3adbfd;
+    }
+    
+    input[type="text"],input[type="password"]{
+     width: 300px;
+     height:50px;
+     font-size: 18px;
+     margin-bottom: 25px;
+     border-radius: 4px;
+     padding-left: 40px;
+    }
+    .dws-input input:hover{
+     box-shadow: 0 0 6px 3px rgba(58, 219, 253, 0.35);
+    }
+    .dws-submit {
+     padding: 13px 30px;
+     margin: 5px 0 20px 0;
+     font-size: 15px;
+     color: #fff;
+     background-color: #2ca8c6;
+     border: none;
+     border-bottom: 4px solid #6ee9fd;
+     cursor: pointer;
+    }
+    .dws-submit:hover{
+     transition: all 0.5s;
+     background: #fff;
+     color: #2c536c;
+    }
+    
+    .dws-input::before{
+     font-family: "FontAwesome";
+     content: "\f007";
+     position: absolute;
+     font-size: 30px;
+     padding: 10px 0 0 7px;
+     color: #2c536c;
+    }
+    .dws-input:nth-child(2)::before{
+    content: "\f023";
+    }
+    .dws-input:hover::before{
+     color: #319ebc;
+     transition: all 0.3s;
+    }
+    .dws-social i{
+     color: #fff;
+     font-size: 20px;
+     width: 20px;
+     padding: 10px;
+    }
+    .dws-social i:hover{
+     background-color: #fff;
+     color: #1a394f;
+     border-radius: 5px;
+     cursor: pointer;
+    }

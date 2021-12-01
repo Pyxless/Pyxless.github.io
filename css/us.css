@@ -1,0 +1,315 @@
+body 
+
+{
+background: #FFFFFF url(Главная.jpeg); 
+background-size: 1920px 1080px;
+background-repeat: no-repeat;
+background-position: 50%;
+background-attachment: fixed;
+}
+IMG.fig {
+border: 3px solid #000000;
+filter: alpha(Opacity=70);
+opacity: 0.7; 
+position: absolute;
+  top: 1%;
+  left: 8%;
+
+}
+IMG.fig1 {
+border: 3px solid #000000;
+
+position: absolute;
+  top: 10%;
+  right: 12%;
+
+}
+IMG.fig2 {
+border: 3px solid #000000;
+
+position: absolute;
+  top: 35%;
+  right: 32%;
+
+}
+IMG.fig3 {
+border: 3px solid #000000;
+position: absolute;
+  top: 60%;
+  right: 12%;
+
+}
+a.adress{
+  
+font-size:45px;
+color:#000000;
+font-weight: bold;
+position: absolute;
+  top: 1%;
+  left: 47%;
+}
+a.adress:visited {
+    color: #000000; /* Цвет посещённой ссылки */
+   } 
+   a.adress:hover {
+    color: #FFFFFF; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: underline; /* Добавляем подчеркивание */
+   }
+
+
+   a.tt {
+    background: url(tt.png); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 48px; /* Ширина рисунка */
+    height: 48px; /*  Высота рисунка */
+    position: absolute;
+    top: 87%;
+  left: 48.7%;
+    }
+   a.tt:hover {
+    background: url(tt1.png); /* Путь к файлу с заменяемым рисунком  */
+   }
+    a.vk {
+    background: url(vk.png); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 48px; /* Ширина рисунка */
+    height: 48px; /*  Высота рисунка */
+   position: absolute;
+   top: 87%;
+  left: 51.7%;
+    }
+   a.vk:hover {
+    background: url(vk1.png); /* Путь к файлу с заменяемым рисунком  */
+   }
+    a.inst {
+    background: url(inst.png); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 48px; /* Ширина рисунка */
+    height: 48px; /*  Высота рисунка */
+   position: absolute;
+   top: 87%;
+  left: 45.7%;
+    }
+   a.inst:hover {
+    background: url(inst1.png); /* Путь к файлу с заменяемым рисунком  */
+   }
+     a.inst1 {
+    background: url(inst.png); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 48px; /* Ширина рисунка */
+    height: 48px; /*  Высота рисунка */
+   position: absolute;
+   top: 26%;
+  right: 29%;
+    }
+   a.inst1:hover {
+    background: url(inst1.png); /* Путь к файлу с заменяемым рисунком  */
+   }
+     a.inst2 {
+    background: url(inst.png); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 48px; /* Ширина рисунка */
+    height: 48px; /*  Высота рисунка */
+   position: absolute;
+   top: 43%;
+  right: 21%;
+    }
+   a.inst2:hover {
+    background: url(inst1.png); /* Путь к файлу с заменяемым рисунком  */
+   }
+     a.inst3 {
+    background: url(inst.png); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 48px; /* Ширина рисунка */
+    height: 48px; /*  Высота рисунка */
+   position: absolute;
+   top: 74%;
+  right: 38%;
+    }
+   a.inst3:hover {
+    background: url(inst1.png); /* Путь к файлу с заменяемым рисунком  */
+   }
+    a.basket {
+    background: url(basket.png); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 48px; /* Ширина рисунка */
+    height: 48px; /*  Высота рисунка */
+   position: absolute;
+  top: 3%;
+  left: 77%;
+    }
+   a.basket:hover {
+    background: url(basket1.png); /* Путь к файлу с заменяемым рисунком  */
+   }  
+a.text{
+  font-size:30px;
+color:#000000;
+ font-weight: bold;
+ position: absolute;
+   top: 95%;
+  right: 30%;
+}
+
+
+.dropbtn {
+    background-color: Transparent;
+    border: 3px solid #000000;
+    color: black;
+    padding: 20px;
+    font-size: 22px;
+     border-radius: 12px;
+ }
+.dropdown {
+display: inline-block;
+    position: absolute;
+  border-radius: 12px;
+  top: 53%;
+  left: 41%;
+
+}
+.dropdown:hover .dropbtn {background: #A9A9A9}
+a.text2{
+ background: #FFFFFF ;
+  border: 3px solid #000000;
+filter: alpha(Opacity=60);
+opacity: 0.6; 
+  text-align: left;
+  width: 20%;
+  font-size:25px;
+color:#000000;
+ font-weight: bold;
+position: absolute;
+  top: 20%;
+  left: 11%;
+
+}
+a.text3{
+ text-decoration: underline;
+  text-align: left;
+  width: 20%;
+  font-size:25px;
+color:#FFFFFF;
+ font-weight: bold;
+position: absolute;
+  top: 20%;
+  right: 20%;
+
+}
+a.text4{
+  text-decoration: underline;
+  text-align: left;
+  width: 20%;
+  font-size:25px;
+color:#FFFFFF;
+ font-weight: bold;
+position: absolute;
+  top: 23%;
+  right: 20%;
+
+}
+
+a.text5{
+  
+text-decoration: underline;
+  text-align: left;
+  width: 20%;
+  font-size:25px;
+color:#FFFFFF;
+ font-weight: bold;
+position: absolute;
+  top: 40%;
+  right: 10%;
+
+}
+
+a.text6{
+  text-decoration: underline;
+  text-align: left;
+  width: 20%;
+  font-size:25px;
+color:#FFFFFF;
+ font-weight: bold;
+position: absolute;
+  top: 43%;
+  right: 10%;
+
+}
+
+a.text7{
+text-decoration: underline;
+  text-align: left;
+  width: 20%;
+  font-size:25px;
+color:#FFFFFF;
+ font-weight: bold;
+position: absolute;
+  top: 68%;
+  right: 20%;
+
+}
+a.text8{
+  text-decoration: underline;
+  text-align: left;
+  width: 36%;
+  font-size:25px;
+color:#FFFFFF;
+ font-weight: bold;
+position: absolute;
+  top:71%;
+  right: 4%;
+  }
+a.text1{
+  background: #FFFFFF ;
+  border: 3px solid #000000;
+filter: alpha(Opacity=60);
+opacity: 0.6; 
+  text-align: left;
+  width: 36%;
+  font-size:25px;
+color:#000000;
+ font-weight: bold;
+position: absolute;
+  top:65%;
+  left: 11%;
+  }
+
+.dropbtn {
+    background-color: Transparent;
+    border: 3px solid #000000;
+    color: black;
+    padding: 5px;
+    font-size: 25px;
+    
+ 
+}
+
+.dropdown {
+display: inline-block;
+    position: absolute;
+  top: 3%;
+  left: 82%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: Transparent   ;
+    min-width: 130px;
+    box-shadow: 0px 26px 30px 0px rgba(4,4,4,0.4);
+    z-index: 1;
+    border: 2px solid #000000;
+}
+
+.dropdown-content a {
+     font-size:22px;
+    color: black;
+    padding: 13px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background: #A9A9A9  }
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background: #A9A9A9}

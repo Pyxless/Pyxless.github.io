@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>adress</title>
+<link rel="stylesheet" href="css/adress.css">
+</head>
+<body>
+        <div id="map"></div>
+
+
+
+<p> <a href="Главная.html"><img src="logo.jfif" width="210" height="170" 
+ class="fig"></a>
+  <a class="text1">WoMan начинался как бренд кастомной одежды с яркими высказываниями. В процессе своего развития мы поняли, что наш креатив и налаженное производство нужны компаниям. Сегодня сила за локальными брендами, экологичностью, потребительской осознанностью. Мы хотим, чтобы WoMan стал примером, когда за #madeinbelarus нам всем будет гордо. </a></p>
+<a  href="Главная.html" class="adress">Адрес</a></p>
+ <a class="text2">Юридический адрес
+Учреждение образования "Белорусский государственный технологический университет"
+
+Юридический адрес: 
+Республика Беларусь
+220006, г. Минск,
+ул. Свердлова, 13а
+ 
+График работы:
+пн.-чт. 8.30 - 17.30
+пт.  8.30 - 16.15
+Обед: 12.30 - 13.15
+сб.-вс. выходной </a></p>
+<a href="https://vk.com/ddcustomzone" class="basket"> </a></p>
+<a href="https://vk.com/ddcustomzone" class="tt"> </a></p>
+<a href="https://vk.com/ddcustomzone" class="vk"> </a></p>
+<a href="https://vk.com/ddcustomzone" class="inst"></a></p>
+<a class="text">© 2020  - 2021 WoMan. Все права защищены. All rights reserved</a></p>
+</p></p>
+<div class="dropdown">
+  <button class="dropbtn">Меню</button>
+  <div class="dropdown-content">
+    <a href="Главная.html">Главная</a>
+    <a href="man.html">Мужчинам</a>
+    <a href="girl.html">Женщинам</a>
+    <a href="us.html">О нас</a>
+  </div>
+</div>
+
+
+   <script>
+    
+      function initMap() {
+      
+        const uluru = { lat: 53.9006042, lng: 27.5567833 };
+  
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: uluru,
+        });
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+
+    <script async defer 
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT5laHMJCZa6kKqXfkwiDeaZwJaj3OwIc&callback=initMap&libraries=&v=weekly"
+      async></script>
+      <script src="components2/Header/Header.js"></script>
+<link rel="stylesheet" href="components2/Header/Header.css">
+</body>
+</html>

@@ -1,0 +1,231 @@
+body 
+
+{
+background: #FFFFFF url(man.jpg); 
+background-size: 1920px 1080px;
+background-repeat: no-repeat;
+background-position: 50%;
+background-attachment: fixed;
+}
+IMG.fig {
+border: 3px solid #000000;
+filter: alpha(Opacity=70);
+opacity: 0.7; 
+position: absolute;
+  top: 1%;
+  left: 8%;
+}
+IMG.tov {
+border: 3px solid #000000;
+filter: alpha(Opacity=90);
+opacity: 0.9; 
+position: absolute;
+  top: 23%;
+  left: 15%;
+}
+IMG.tov2 {
+border: 3px solid #000000;
+filter: alpha(Opacity=100);
+opacity: 1; 
+position: absolute;
+  top: 35%;
+  left: 30%;
+}
+a.Woman{
+  font-size:45px;
+color:#FFFFFF;
+font-weight: bold;
+position: absolute;
+  top: 2%;
+  left: 46%;
+}
+a.Woman:visited {
+    color: #00008B; /* Цвет посещённой ссылки */
+   } 
+   a.Woman:hover {
+    color: #FF00FF; /* Цвет ссылки при наведении на нее курсора мыши */  
+     
+   }
+
+   a.tt {
+    background: url(tt.png); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 48px; /* Ширина рисунка */
+    height: 48px; /*  Высота рисунка */
+    position: absolute;
+    top: 87%;
+  left: 48.8%;
+    }
+   a.tt:hover {
+    background: url(tt1.png); /* Путь к файлу с заменяемым рисунком  */
+   }
+    a.vk {
+    background: url(vk.png); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 48px; /* Ширина рисунка */
+    height: 48px; /*  Высота рисунка */
+   position: absolute;
+   top: 87%;
+  left: 51.8%;
+    }
+   a.vk:hover {
+    background: url(vk1.png); /* Путь к файлу с заменяемым рисунком  */
+   }
+    a.inst {
+    background: url(inst.png); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 48px; /* Ширина рисунка */
+    height: 48px; /*  Высота рисунка */
+   position: absolute;
+   top: 87%;
+  left: 45.8%;
+    }
+   a.inst:hover {
+    background: url(inst1.png); /* Путь к файлу с заменяемым рисунком  */
+   }
+    a.basket {
+    background: url(basket.png); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 48px; /* Ширина рисунка */
+    height: 48px; /*  Высота рисунка */
+   position: absolute;
+  top: 3%;
+  left: 77%;
+    }
+   a.basket:hover {
+    background: url(basket1.png); /* Путь к файлу с заменяемым рисунком  */
+   }
+  a.text{
+  font-size:30px;
+color:#000000;
+font-weight: bold;
+position: absolute;
+  top: 95%;
+  left: 27%;
+}
+
+.dropbtn {
+    background-color: Transparent;
+    border: 3px solid #000000;
+    color: black;
+    padding: 5px;
+    font-size: 25px;
+    
+ 
+}
+
+.dropdown {
+display: inline-block;
+    position: absolute;
+  top: 3%;
+  left: 82%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: Transparent   ;
+    min-width: 130px;
+    box-shadow: 0px 26px 30px 0px rgba(4,4,4,0.4);
+    z-index: 1;
+    border: 2px solid #000000;
+}
+
+.dropdown-content a {
+     font-size:22px;
+    color: black;
+    padding: 13px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background: #A9A9A9  }
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background: #A9A9A9}
+
+
+.kup1 {
+    background-color: Transparent;
+    border: 3px solid #ffffff;
+    color: white;
+    padding: 10px;
+    font-size: 22px;
+     
+ }
+.kupt1 {
+display: inline-block;
+    position: absolute;
+  border-radius: 12px;
+  top: 65%;
+  right: 25%;
+
+}
+.kupt1:hover .kup1 {background: #A9A9A9}
+ a.text1{
+  text-decoration: underline;
+  text-align: left;
+  width: 30%;
+  font-size:25px;
+color:#ffffff;
+ font-weight: bold;
+position: absolute;
+  top: 15%;
+  right: 15%;
+}
+ a.text2{
+  text-decoration: underline;
+  text-align: center;
+  width: 30%;
+  font-size:25px;
+color:#ffffff;
+ font-weight: bold;
+position: absolute;
+  top: 85%;
+  left: 15%;
+}
+ a.text3{
+  text-decoration: underline;
+  text-align: left;
+  width: 40%;
+  font-size:25px;
+color:#ffffff;
+ font-weight: bold;
+position: absolute;
+  top: 45%;
+  right: 5%;
+}
+a.text4{
+  text-decoration: underline;
+  text-align: left;
+  width: 40%;
+  font-size:25px;
+color:#ffffff;
+ font-weight: bold;
+position: absolute;
+  top: 48%;
+  right: 5%;
+}
+a.text5{
+  text-decoration: underline;
+  text-align: left;
+  width: 40%;
+  font-size:25px;
+color:#ffffff;
+ font-weight: bold;
+position: absolute;
+  top: 51%;
+  right: 5%;
+}
+a.text6{
+  text-decoration: underline;
+  text-align: left;
+  width: 40%;
+  font-size:25px;
+color:#ffffff;
+ font-weight: bold;
+position: absolute;
+  top: 54%;
+  right: 5%;
+}

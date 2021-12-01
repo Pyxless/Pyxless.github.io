@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Главная</title>
+<link rel="stylesheet" href="css/главная.css">
+</head>
+<body>
+ <!-- <button class="pop">Cделать заказ👑</button>
+
+<div class="popup">
+  <div class="container">
+    <div class="popup__wrapper">
+      <div id="blablabla">
+        <form role="form" action="/requestFine" autocomplete="off" method="POST">
+          <label>Ім'я:</label>
+          <input type="text" name="nameReq">
+          <label>Прізвище:</label>
+          <input type="text" name="lastNameReq">
+          <label>Телефон:</label>
+          <input type="text" name="telReq">
+          <label>Опис:</label>
+          <input type="text" name="textReq">
+          <button type="submit" class="btn btn-success">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="button">
+  <a href="#" id ="open_pop_up">Cделать заказ👑</a>
+</div>
+
+<div class="pop_up" id="pop_up">
+  <div class="pop_up_container">
+      <div class="pop_up_body" id="pop_up_body">
+          <p>Оставить заявку</p>
+          <form action="mail.php" method="POST"  >
+              <input type="text" name="user_name" placeholder="Имя">
+              <input type="text" name="user_phone" placeholder="Телефон">
+              <input type="text" name="user_email" placeholder="Электроная почта">
+              <button>Оставить заявку</button>
+              
+          </form>
+          <div class="pop_up_close" id="pop_up_close">&#10006</div>
+      </div>
+  </div>
+</div>
+
+
+<p> <img src="logo.jfif" width="210" height="170" 
+ class="fig">
+ <a href="man.html" class="man">Мужчинам</a></p>
+<a href="girl.html" class="girl">Женщинам</a></p>
+<a href="adress.html" class="us">Адрес</a></p>
+<a href="us.html" class="adress">О нас</a></p>
+<a href="https://vk.com/ddcustomzone" class="tt"> </a></p>
+<a href="https://vk.com/ddcustomzone" class="vk"> </a></p>
+<a href="https://vk.com/ddcustomzone" class="inst"></a></p>
+<a class="text1">Наша одежда, как произведение искусства. Попробуйте?</a></p>
+<a class="text2">Стиль и Эксклюзивность.</a></p>
+<a class="text">© 2020  - 2021 WoMan. Все права защищены. All rights reserved</a></p>
+</p></p>
+<script>
+
+const openPopUp = document.getElementById('open_pop_up');
+const closePopUp = document.getElementById('pop_up_close');
+const popUp = document.getElementById('pop_up');
+
+openPopUp.addEventListener('click', function(e){
+    e.preventDefault();
+    popUp.classList.add('active');
+})
+
+closePopUp.addEventListener('click', () => {
+    popUp.classList.remove('active');
+})
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
